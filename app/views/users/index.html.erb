@@ -2,17 +2,19 @@
 
 <h1>Users</h1>
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Elon_Musk_2015.jpg" height="100">
-<script>
-    ga('send', {
-        hitType: 'transition to screen',
-        eventCategory: 'Users',
-        eventAction: 'index',
-        eventLabel: 'blabla2222'
-    });
-    console.log("debug ololog");
-</script>
 <table>
   <thead>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106149406-6"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-106149406-6');
+      </script>
+
+
     <tr>
       <th>Name</th>
       <th>Email</th>
@@ -36,3 +38,13 @@
 <br>
 
 <%= link_to 'New User', new_user_path %>
+
+<script>
+    ga('send', {
+        hitType: 'transition to screen',
+        eventCategory: 'Users',
+        eventAction: 'index',
+        eventLabel: 'blabla2222'
+    });
+    console.log("debug ololog2");
+</script>
