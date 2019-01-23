@@ -3,3 +3,12 @@
 <%= render 'form', user: @user %>
 
 <%= link_to 'Back', users_path %>
+
+<script>
+    ga('send', {
+    hitType: 'transition to screen',
+    eventCategory: 'Users',
+    eventAction: 'new',
+    eventLabel: 'blabla'
+    });
+</script>
